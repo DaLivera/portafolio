@@ -1,0 +1,136 @@
+.trabajos {
+  background-color: var(--white);
+  height: auto;
+  scroll-margin-top: 4rem;
+  padding: 3.5rem 0;
+}
+
+.trabajos__titulo {
+  margin-bottom: 8rem;
+  font-size: 6vw;
+  font-weight: var(--peso-700);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.trabajos__proyecto {
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+  font-weight: var(--peso-200);
+  text-align: left;
+}
+
+.trabajos__descripcion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 5rem;
+  height: auto;
+}
+
+.trabajos__img-academia {
+  flex: 1 1 30%;
+}
+
+.trabajos__texto{
+  flex: 1 1 70%;
+  padding: 0 3rem;
+}
+
+.trabajos__botones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.trabajos__texto-descargar {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--color-primario);
+  border-radius: 3px;
+  cursor: pointer;
+  border: 2px solid var(--color-primario);
+}
+
+.trabajos__texto-descargar:hover {
+  background-color: var(--white);
+  color: var(--color-primario);
+  border: 2px solid var(--color-primario);
+  transition: background-color .4s ease;
+}
+
+.trabajos__texto-visitar {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--color-primario);
+  border-radius: 3px;
+  cursor: pointer;
+  border: 2px solid var(--color-primario);
+}
+
+.trabajos__texto-visitar:hover {
+  background-color: var(--white);
+  color: var(--color-primario);
+  border: 2px solid var(--color-primario);
+  transition: background-color .4s ease;
+}
+
+.parrafo > span {
+  font-weight: var(--peso-600);
+}
+
+@media screen and (max-width: 1024px) {
+.trabajos__titulo {
+  margin-bottom: 2rem;
+  font-size: 6vw;
+}
+
+}
+
+@media screen and (max-width: 992px) {
+  .trabajos__descripcion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+  .trabajos__img-academia {
+  display: none;
+}
+
+.trabajos__titulo {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.trabajos__texto{
+  width: 100%;
+  margin-right: 0;
+
+}
+
+.trabajos__texto{
+  padding: 0;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+.trabajos__titulo {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.trabajos__botones a {
+  flex: 1 1 50%;
+}
+
+}
